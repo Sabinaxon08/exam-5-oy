@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="night">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="flex items-center justify-center h-screen">
+
+    <div id="startWrapper"
+        class="w-1/2 bg-base-300 border-2 border-primary shadow-lg shadow-sky-400 py-20 px-10 rounded-3xl text-center flex flex-col gap-5">
+        <h1 class="relative inline-block text-5xl font-black tracking-widest text-primary">Mars Math Game <span
+                class="absolute tracking-tighter -top-0 text-xs font-bold right-20 badge badge-prim ary"> exam</span>
+        </h1>
+        <button class="btn btn-primary">START GAME</button>
+    </div>
+
+    <div id="gameWrapper"
+        class="w-1/2 border-2 border-primary shadow-lg shadow-sky-400 bg-base-300 gap-5 py-20 px-10 rounded-3xl text-center hidden gapp-5 justify-center flex-col">
+        <p id="savolText" class="text-primary font-bold">..................</p>
+        <div class="text-white flex flex-col gap-5">
+            <input type="text" placeholder="Type here" class="input input-bordered input-primary w-full " />
+            <button class="btn btn-outline btn-success">Send</button>
+        </div>
+    </div>
+
+    <div id="result" class="w-1/2 border-2 border-primary shadow-lg shadow-sky-400 bg-base-300 gap1-5 py-20 px-10 rounded-3xl text-center hidden gap-5 justify-center flex-col">
+        <p id="textContent" class="text-primary text-3xl"></p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
